@@ -3,6 +3,7 @@ package com.bitwise.controllers;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -64,7 +65,7 @@ public class CartController extends HttpServlet {
 				response.sendRedirect("cart.jsp");
 				return;
 			}else{
-				pw.print("<font size='3' color='red'>Cart is Empty !!! </font>");
+				pw.print("<font size='10' color='red'>Sorry Your Cart is Empty !!! </font>");
 				
 			}
 		}
@@ -75,8 +76,7 @@ public class CartController extends HttpServlet {
 				response.sendRedirect("cart.jsp");
 				return;
 			}else{
-				pw.print("<font size='3' color='red'>Cart is Empty !!! </font>");
-				
+				pw.print("<font size='10' color='red'>Cart is Empty !!! ADD ITEMS</font>");
 			}
 		}
 		

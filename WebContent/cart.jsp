@@ -6,16 +6,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-<html>
-<head>
 <title>YOUR PROFILE</title>
 <link rel='stylesheet' type='text/css' href='css/home.css' />
 <link rel='stylesheet' type='text/css' href='css/mainmenu.css' />
 </head>
 <body>
+
 	<div id='main'>
 		<form action='ProductController'>
 			<center>
@@ -23,14 +19,6 @@
 					<tr>
 						<th>Cart Items</th>
 					</tr>
-					<!--
-		for (Product item: cartItems) {
-			out.println("<tr>"
-					+ "<td>"+item.getProductName() + 
-							 "</tr>");
-			sum=sum+item.getProductPrice();
-			
-		} -->
 
 					<c:if test="${ not empty cart.getCartItems() }">
 
